@@ -1,11 +1,7 @@
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <i className="fa-solid fa-coffee" />
-    </>
-  );
+  return <></>;
 }
 
 export default App;
