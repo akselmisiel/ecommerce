@@ -618,6 +618,14 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[680px\] {
+  width: 680px;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -855,6 +863,10 @@ video {
 }
 
 @media (max-width: 1115px) {
+  .lg\:w-\[680px\] {
+    width: 680px;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }

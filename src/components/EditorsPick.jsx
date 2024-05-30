@@ -3,7 +3,7 @@ import React from "react";
 const EditorsPick = () => {
   return (
     <section className="w-full bg-neutral-50 px-8 py-20 flex flex-col items-center">
-      <div className="text-center mb-12 md:w-[680px]">
+      <div className="text-center mb-12 ">
         <h2 className="text-slate-800 text-2xl font-bold font-['Montserrat']">
           EDITOR’S PICK
         </h2>
