@@ -1,6 +1,9 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
-    <header className="w-full h-[136px] pb-2 bg-white flex flex-col justify-start items-center gap-3 ">
+    <header className="w-full h-auto pb-2 bg-white flex flex-col justify-start items-center gap-3 z-50 relative">
       <div className="w-full sm:hidden h-[58px] pt-[9px] pb-[3px] bg-slate-800 flex justify-between items-center px-6">
         <div className="flex items-center gap-2.5">
           <span className="flex items-center gap-1 p-2.5 rounded-[5px] text-white text-sm font-bold">
@@ -37,75 +40,75 @@ function Header() {
         </span>
         <div className="sm:flex items-center gap-6 hidden justify-between w-full">
           <span className="text-slate-800 text-2xl font-bold">Bandage</span>
-          <div className="hidden sm:flex items-center gap-6 ">
-            <i class="fa-solid fa-magnifying-glass" />
-            <i class="fa-solid fa-cart-shopping" />
-            <i class="fa-solid fa-bars" />
+          <div className="hidden sm:flex items-center gap-6">
+            <i className="fa-solid fa-magnifying-glass" />
+            <i className="fa-solid fa-cart-shopping" />
+            <i className="fa-solid fa-bars" />
           </div>
         </div>
-        <div className="w-full flex justify-between items-center px-[17px] sm:flex-col sm:pb-5 sm:pt-20">
+        <div className="w-full flex justify-between items-center px-[17px] sm:flex-col sm:pb-20 sm:pt-20">
           <nav className="flex items-center gap-8 sm:flex-col">
-            <a
-              href="#"
-              className="text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl hover:font-thin"
+            <Link
+              to="/"
+              className="text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl sm:hover:font-thin"
             >
               Home
-            </a>
-            <a
-              href="#"
-              className=" hidden sm:flex text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl hover:font-thin"
+            </Link>
+            <Link
+              to="/product"
+              className="hidden sm:flex text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl hover:font-thin"
             >
               Product
-            </a>
-            <a
-              href="#"
-              className=" hidden sm:flex text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl hover:font-thin"
+            </Link>
+            <Link
+              to="/pricing"
+              className="hidden sm:flex text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl hover:font-thin"
             >
               Pricing
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/shop"
               className="text-slate-800 text-sm font-medium sm:hidden"
             >
-              Shop <i class="fa-solid fa-caret-down" />
-            </a>
-            <a
-              href="#"
+              Shop <i className="fa-solid fa-caret-down" />
+            </Link>
+            <Link
+              to="/about"
               className="text-neutral-400 text-sm font-bold sm:hidden"
             >
               About
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/blog"
               className="text-neutral-400 text-sm font-bold sm:hidden"
             >
               Blog
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contact"
               className="text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl sm:hover:font-thin"
             >
               Contact
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/pages"
               className="text-neutral-400 text-sm font-bold sm:hidden"
             >
               Pages
-            </a>
+            </Link>
           </nav>
           <div className="flex items-center gap- sm:hidden">
             <span className="flex items-center p-[15px] rounded-[37px] gap-2 text-center text-sky-500 text-sm font-bold">
-              <i class="fa-regular fa-user"></i> Login / Register
+              <i className="fa-regular fa-user"></i> Login / Register
             </span>
             <div className="w-[46px] h-[46px] flex justify-center items-center p-[15px] rounded-[37px]">
               <div className="w-4 h-4 flex justify-center items-center">
-                <i class="fa-solid fa-magnifying-glass text-sky-500" />
+                <i className="fa-solid fa-magnifying-glass text-sky-500" />
               </div>
             </div>
             <div className="w-14 h-[46px] flex justify-center gap-2 items-center p-[15px] rounded-[37px]">
               <div className="w-4 h-4 pr-px pt-px flex justify-center items-center">
-                <i class="fa-solid fa-cart-shopping text-sky-500" />
+                <i className="fa-solid fa-cart-shopping text-sky-500" />
               </div>
               <span className="text-center text-sky-500 text-xs font-normal">
                 1
@@ -113,7 +116,7 @@ function Header() {
             </div>
             <div className="w-14 h-[46px] flex justify-center gap-2 items-center p-[15px] rounded-[37px]">
               <div className="w-4 h-4 pb-px flex justify-center items-center">
-                <i class="fa-regular fa-heart text-sky-500" />
+                <i className="fa-regular fa-heart text-sky-500" />
               </div>
               <span className="text-center text-sky-500 text-xs font-normal">
                 1
