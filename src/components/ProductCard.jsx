@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = ({ imgSrc, price }) => {
   return (
-    <article className="w-[238px] bg-white flex flex-col items-center">
+    <article className="w-[238px] bg-neutral-50 flex flex-col items-center">
       <img className="w-[239px] h-[427px]" src={imgSrc} alt="Product" />
       <div className="w-full px-[25px] pt-[25px] pb-[35px] flex flex-col items-center gap-2.5">
         <h2 className="text-center text-slate-800 text-base font-bold font-['Montserrat']">
