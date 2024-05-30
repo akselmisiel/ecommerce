@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 
 const Products = () => {
   return (
-    <section className="w-full flex flex-col items-center">
+    <section className="w-full bg-neutral-50 flex flex-col items-center">
       <div className="text-center mb-12 ">
         <p className="text-neutral-500 text-2xl font-normal font-['Montserrat']">
           Featured Products
