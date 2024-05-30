@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <i class="fa-solid fa-mask" />
+      <i className="fa-solid fa-coffee" />
     </>
   );
 }
