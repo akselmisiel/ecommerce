@@ -9,7 +9,7 @@ import {
 
 const items = [
   {
-    src: "./src/carousel-inner.png",
+    src: "https://i.ibb.co/yy4j8RM/carousel-inner.png",
     altText: "Slide 1",
     caption: "Slide 1",
     key: 1,
