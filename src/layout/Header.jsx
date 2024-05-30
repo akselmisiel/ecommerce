@@ -1,22 +1,20 @@
 function Header() {
   return (
-    <header className="w-full h-[136px] pb-2 bg-white flex flex-col justify-start items-center gap-3">
-      <div className="w-full h-[58px] pt-[9px] pb-[3px] bg-slate-800 flex justify-between items-center px-6">
+    <header className="w-full h-[136px] pb-2 bg-white flex flex-col justify-start items-center gap-3 ">
+      <div className="w-full sm:hidden h-[58px] pt-[9px] pb-[3px] bg-slate-800 flex justify-between items-center px-6">
         <div className="flex items-center gap-2.5">
-          <span className="flex items-center gap-1 p-2.5 rounded-[5px] text-white text-sm font-bold font-['Montserrat']">
+          <span className="flex items-center gap-1 p-2.5 rounded-[5px] text-white text-sm font-bold">
             <i className="fa-solid fa-phone" /> (225) 555-0118
           </span>
-          <span className="flex items-center gap-1 p-2.5 rounded-[5px] text-white text-sm font-bold font-['Montserrat']">
+          <span className="flex items-center gap-1 p-2.5 rounded-[5px] text-white text-sm font-bold">
             <i className="fa-regular fa-envelope" /> michelle.rivera@example.com
           </span>
         </div>
-        <span className="p-2.5 text-white text-sm font-bold font-['Montserrat']">
+        <span className="p-2.5 text-white text-sm font-bold">
           Follow Us and get a chance to win 80% off
         </span>
         <div className="flex items-center gap-2.5 p-2.5">
-          <span className="text-white text-sm font-bold font-['Montserrat']">
-            Follow Us:
-          </span>
+          <span className="text-white text-sm font-bold">Follow Us:</span>
           <div className="flex items-center gap-1">
             <a href="https://instagram.com" className="p-1 flex items-center">
               <i className="fa-brands fa-instagram text-white" />
@@ -33,51 +31,71 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-between items-center px-[17px]">
-        <span className="pr-[79px] py-[13px] text-slate-800 text-2xl font-bold font-['Montserrat']">
+      <div className="w-full flex justify-between items-center px-[30px] sm:flex-col sm:pt-5">
+        <span className="pr-[79px] py-[13px] text-slate-800 text-2xl font-bold sm:hidden">
           Bandage
         </span>
-        <div className="w-full flex justify-between items-center px-[17px]">
-          <nav className="flex items-center gap-6">
+        <div className="sm:flex items-center gap-6 hidden justify-between w-full">
+          <span className="text-slate-800 text-2xl font-bold">Bandage</span>
+          <div className="hidden sm:flex items-center gap-6 ">
+            <i class="fa-solid fa-magnifying-glass" />
+            <i class="fa-solid fa-cart-shopping" />
+            <i class="fa-solid fa-bars" />
+          </div>
+        </div>
+        <div className="w-full flex justify-between items-center px-[17px] sm:flex-col sm:pb-5 sm:pt-20">
+          <nav className="flex items-center gap-8 sm:flex-col">
             <a
               href="#"
-              className="text-neutral-500 text-sm font-bold font-['Montserrat']"
+              className="text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl hover:font-thin"
             >
               Home
             </a>
             <a
               href="#"
-              className="text-slate-800 text-sm font-medium font-['Montserrat']"
+              className=" hidden sm:flex text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl hover:font-thin"
+            >
+              Product
+            </a>
+            <a
+              href="#"
+              className=" hidden sm:flex text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl hover:font-thin"
+            >
+              Pricing
+            </a>
+            <a
+              href="#"
+              className="text-slate-800 text-sm font-medium sm:hidden"
             >
               Shop <i class="fa-solid fa-caret-down" />
             </a>
             <a
               href="#"
-              className="text-neutral-500 text-sm font-bold font-['Montserrat']"
+              className="text-neutral-400 text-sm font-bold sm:hidden"
             >
               About
             </a>
             <a
               href="#"
-              className="text-neutral-500 text-sm font-bold font-['Montserrat']"
+              className="text-neutral-400 text-sm font-bold sm:hidden"
             >
               Blog
             </a>
             <a
               href="#"
-              className="text-neutral-500 text-sm font-bold font-['Montserrat']"
+              className="text-neutral-400 text-sm font-bold sm:font-normal sm:text-3xl sm:hover:font-thin"
             >
               Contact
             </a>
             <a
               href="#"
-              className="text-neutral-500 text-sm font-bold font-['Montserrat']"
+              className="text-neutral-400 text-sm font-bold sm:hidden"
             >
               Pages
             </a>
           </nav>
-          <div className="flex items-center gap-3">
-            <span className="flex items-center p-[15px] rounded-[37px] gap-2 text-center text-sky-500 text-sm font-bold font-['Montserrat']">
+          <div className="flex items-center gap- sm:hidden">
+            <span className="flex items-center p-[15px] rounded-[37px] gap-2 text-center text-sky-500 text-sm font-bold">
               <i class="fa-regular fa-user"></i> Login / Register
             </span>
             <div className="w-[46px] h-[46px] flex justify-center items-center p-[15px] rounded-[37px]">
@@ -89,7 +107,7 @@ function Header() {
               <div className="w-4 h-4 pr-px pt-px flex justify-center items-center">
                 <i class="fa-solid fa-cart-shopping text-sky-500" />
               </div>
-              <span className="text-center text-sky-500 text-xs font-normal font-['Montserrat']">
+              <span className="text-center text-sky-500 text-xs font-normal">
                 1
               </span>
             </div>
@@ -97,7 +115,7 @@ function Header() {
               <div className="w-4 h-4 pb-px flex justify-center items-center">
                 <i class="fa-regular fa-heart text-sky-500" />
               </div>
-              <span className="text-center text-sky-500 text-xs font-normal font-['Montserrat']">
+              <span className="text-center text-sky-500 text-xs font-normal">
                 1
               </span>
             </div>
