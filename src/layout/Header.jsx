@@ -34,7 +34,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-between items-center px-[30px] sm:flex-col sm:pt-5">
+      <div className="w-screen flex justify-between items-center sm:flex-col sm:pt-5">
         <span className="pr-[79px] py-[13px] text-slate-800 text-2xl font-bold sm:hidden">
           Bandage
         </span>
@@ -46,7 +46,7 @@ function Header() {
             <i className="fa-solid fa-bars" />
           </div>
         </div>
-        <div className="w-full flex justify-between items-center px-[17px] sm:flex-col sm:pb-20 sm:pt-20">
+        <div className="w-screen flex justify-between items-center sm:flex-col sm:pb-20 sm:pt-20">
           <nav className="flex items-center gap-8 sm:flex-col">
             <Link
               to="/"
