@@ -12,7 +12,7 @@ const EditorsPick = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-6 md:flex-row">
         {/* Men Section */}
         <div className="relative bg-white flex justify-center items-center overflow-hidden">
           <img
